@@ -1,0 +1,1 @@
+web: gunicorn bank1756.wsgi
