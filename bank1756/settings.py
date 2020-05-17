@@ -69,9 +69,6 @@ TEMPLATES = [
     },
 ]
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "bank1756/static"),
- ]
 
 WSGI_APPLICATION = 'bank1756.wsgi.application'
 
@@ -124,6 +121,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "bank1756/static"),
+ ]
 
 LOGIN_URL = '/admin/'
