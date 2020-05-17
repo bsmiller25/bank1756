@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}1756 Bank St{% endblock %}
+
+{% block content %}
+
+  <main>
+    <div id="#" class="card mt-5 p-5 bg-light align-items-center">
+      <h1>1756 Bank St, Baltimore MD</h1>
+      <p class="lead">Hello, World!</p>
+    </div>
+
+    <div id="people" class="card mt-5 p-5 bg-light align-items-center">
+      <h1>People of 1756 Bank St!</h1>
+      <p class="lead">Hello, everyone!</p>
+      <div class="row justify-content-center">
+	<div class="col" style="max-width: 700px">
+	  <div id="AmyBen" class="card">
+	    {% load static %}
+	    <img src="{% static 'img/amy_ben_1.jpg' %}" class="img-fluid" alt="Ben and Amy!">
+	    <div class="card-body">
+	      <h5 class="card-title">Amy and Ben</h5>
+	      <p class="card-text">Hi! We're Amy and Ben! You might see us running around the neighborhood or exploring the area.</p>
+	      <hr>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+    
+    <div id="pets" class="card mt-5 p-5 bg-light align-items-center">
+      <h1>Pets of 1756 Bank St!</h1>
+      <p class="lead">Meet the family!</p>
+      <p><a href="/pets/care"><span class="badge badge badge-info">Pet Care Info</span></a></p>
+      <div class="row">
+	<div class="col">
+	  <div id="Leo" class="card">
+	    <img src="/static/img/leo_1.jpg" class="img-fluid" alt="Leo!">
+	    <div class="card-body">
+	      <h5 class="card-title">Leo</h5>
+	      <p class="card-text">Big orange boy. Very sweet but very shy!</p>
+	      <hr>
+	      Homeagain: 985112005487423
+	    </div>
+	  </div>
+	</div>
+	<div class="col">
+	  <div id="Wendy" class="card">
+	    <img src="/static/img/wendy_1.jpg" class="img-fluid" alt="Wendy!">
+	    <div class="card-body">
+	      <h5 class="card-title">Wendy</h5>
+	      <p class="card-text">Little girl. Very sweet and also very shy!</p>
+	      <hr>
+	      Homeagain: 985112005486993
+	    </div>
+	  </div>
+	</div>
+	<div class="col">
+	  <div id="Benny" class="card">
+	    <img src="/static/img/benny_1.jpg" class="img-fluid" alt="Benny!">
+	    <div class="card-body">
+	      <h5 class="card-title">Benny</h5>
+	      <p class="card-text">Very friendly! Practically a dog. You may see him sitting in the front window.</p>
+	      <hr>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </main>
+  
+  
+{% endblock %}
+
