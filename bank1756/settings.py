@@ -25,7 +25,7 @@ SECRET_KEY = 'x-ccsbi4o4$4)9$f7&e45&d*ep5h3qu%&i4u5)&7j=n@^$psuj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.1756bank.com']
 
 
 # Application definition
