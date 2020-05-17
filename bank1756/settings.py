@@ -79,12 +79,16 @@ WSGI_APPLICATION = 'bank1756.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+import dj_database_url
+DATABASES = {}
+DATABASES['default'] = dj_database_url.config(
+    default='postgresql://{}:{}@{}:{}/{}'.format(
+        os.environ.get('DB_USER'),
+        os.environ.get('DB_PASSWORD'),
+        os.environ.get('DB_HOST'),
+        os.environ.get('DB_PORT'),
+        os.environ.get('DB_NAME')),
+    conn_max_age=600, ssl_require=True)
 
 
 # Password validation

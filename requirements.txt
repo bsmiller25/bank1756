@@ -3,7 +3,9 @@ Django==3.0.6
 django-crispy-forms==1.9.1
 pytz==2020.1
 gunicorn==20.0.4
+dj-database-url==0.5.0
 python-dotenv==0.13.0
+psycopg2==2.8.5
 sqlparse==0.3.1
 -e git://github.com/bsmiller25/dj_cookbook.git@02700e1fb4e776e58ccf98319c5e346e943fd232#egg=dj_cookbook
 
