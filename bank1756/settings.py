@@ -28,7 +28,9 @@ if os.environ.get('DEBUG') == '1':
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = ['www.1756bank.com']
+ALLOWED_HOSTS = ['www.1756bank.com',
+                 '127.0.0.1',
+]
 
 
 # Application definition
