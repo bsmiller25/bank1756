@@ -38,6 +38,7 @@ ALLOWED_HOSTS = ['www.1756bank.com',
 INSTALLED_APPS = [
     'crispy_forms',
     'dj_cookbook',
+    'dj_portfolio',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
