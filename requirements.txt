@@ -34,7 +34,7 @@ six==1.15.0
 soupsieve==2.0.1
 sqlparse==0.3.1
 traitlets==5.0.4
-urllib3==1.25.9
+urllib3==1.26.5
 wcwidth==0.2.5
 whitenoise==5.1.0
 -e git://github.com/siavashadpey/yfinance.git@9abdea4074604bbc21ac0da77d8e77dfe59e60f7#egg=yfinance
