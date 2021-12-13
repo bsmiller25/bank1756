@@ -15,7 +15,7 @@ idna==2.10
 ipython==7.18.1
 ipython-genutils==0.2.0
 jedi==0.17.2
-lxml==4.5.2
+lxml==4.6.5
 multitasking==0.0.9
 numpy==1.19.2
 pandas==1.1.2
