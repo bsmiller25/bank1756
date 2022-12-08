@@ -2,7 +2,7 @@ asgiref==3.2.10
 backcall==0.2.0
 beautifulsoup4==4.9.2
 bs4==0.0.1
-certifi==2020.6.20
+certifi==2022.12.7
 chardet==3.0.4
 decorator==4.4.2
 -e git://github.com/bsmiller25/dj_cookbook.git#egg=dj_cookbook
